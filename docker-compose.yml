@@ -2,7 +2,7 @@ services:
   ultraviolet:
     build:
       context: .
-      dockerfile: docker/Dockerfile
+      dockerfile: ./Dockerfile
       args:
         - NPM_BUILD=npm ci --omit=dev --frozen-lockfile
     ports:
